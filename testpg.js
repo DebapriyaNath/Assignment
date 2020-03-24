@@ -1,19 +1,21 @@
+//1st 
 let userObjectA={
     name: "PG",
     email:"pg@gmail.com",
     contact:98309043023,
     address:"baker street"
 };
+//1st second part
 console.log(userObjectA)
 let userObjectB={...userObjectA};
 console.log(userObjectB)
-
+//2nd
 userObjectA={
     ...userObjectA,
     address: "224"
 };
 console.log(userObjectA);
-
+//3rd
 
 function isEquivalent(a, b) {
     
@@ -37,10 +39,9 @@ function isEquivalent(a, b) {
     
     return true;
 }
-
 console.log(isEquivalent(userObjectA, userObjectB));
 
-
+//4th
 let address={country:"a",
     city:"kol",
     zip:700094
@@ -51,12 +52,12 @@ userObjectA={
 }
 console.log(userObjectA)
 
-
+//5th
 const merge = (...objects) => ({...objects});
 let user = merge(userObjectA, userObjectB);
 console.log(user)
 
-
+//6th
 let userObjectC = {
     name : "deadpool",
     email : "dp@xyz.com",
@@ -66,7 +67,7 @@ let userObjectC = {
 user=merge(userObjectA, userObjectB, userObjectC);
 console.log(user)
 
-
+//7th
 class Heroes{
     constructor(name,type){
         this.name=name;
@@ -87,7 +88,7 @@ class Superheroes  extends  Heroes{
   console.log(Superman.rating);  
 
 
-
+//8th
   const product = {
     name: 'SHIRT',
     price: 500,
